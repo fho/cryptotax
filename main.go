@@ -73,10 +73,8 @@ func main() {
 	fmt.Println("TAX REPORT Full")
 	fmt.Println(book.TaxReport(true))
 	fmt.Println("================")
-	fmt.Println("TAX REPORT 2017")
+	fmt.Printf("TAX REPORT %v\n", taxYear)
 	fmt.Println(book.TaxReport(false))
 
 	fmt.Println()
-	fmt.Printf("Year %v\n", taxYear)
-
 }
