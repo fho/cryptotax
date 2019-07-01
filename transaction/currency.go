@@ -10,6 +10,7 @@ type Currency int
 const (
 	CurrencyUndef Currency = iota
 	BCH
+	BSV
 	BTC
 	DASH
 	EOS
@@ -25,6 +26,7 @@ const (
 
 var strToCurrency = map[string]Currency{
 	"BCH":  BCH,
+	"BSV":  BSV,
 	"BTC":  BTC,
 	"DASH": DASH,
 	"EOS":  EOS,
@@ -41,6 +43,7 @@ var strToCurrency = map[string]Currency{
 var currencyToStr = map[Currency]string{
 	BCH:  "BCH",
 	BTC:  "BTC",
+	BSV:  "BSV",
 	DASH: "DASH",
 	EOS:  "EOS",
 	ETH:  "ETH",
